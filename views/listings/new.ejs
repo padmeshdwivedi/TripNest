@@ -1,0 +1,47 @@
+<% layout('layouts/boilerplate') %>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h3>Create A New Listing</h3>
+            <form action="/listings" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div>
+            <label for="title" class="form-label">Enter Title</label>
+            <input type="text" placeholder="enter title" name="listing[title]" class="form-control" required>
+            <div class="valid-feedback">Looks good !</div>
+        </div>
+        <div>
+            <label for="description" class="form-label">Enter Description</label>
+            <textarea placeholder="enter description" name="listing[description]" class="form-control" required ></textarea>
+            <div class="invalid-feedback">Description should be.</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+            <label for="number" class="form-label">Enter Price</label>
+            <input type="number" placeholder="enter price" name="listing[price]" min="0" class="form-control" required>
+            <div class="invalid-feedback">Price should be.</div>
+            </div>
+            <div class="col-md-6">
+                <label for="location" class="form-label">Enter Loaction</label>
+                <input type="text" placeholder="enter location" name="listing[location]" class="form-control" required>
+                <div class="invalid-feedback">Location should be.</div>
+            </div>
+        </div>
+        <div>
+            <label for="country" class="form-label">Enter Country</label>
+            <input type="text" placeholder="enter country" name="listing[country]" class="form-control" required>
+            <div class="invalid-feedback">Country should be.</div>
+        </div>
+        <div>
+            <label for="image" class="form-label">Enter Image Url</label>
+            <input type="text" placeholder="enter image/URL" name="listing[image]" class="form-control">
+        </div>
+        <!-- <div>
+            <label for="image" class="form-label">Upload Image</label>
+            <input type="file" placeholder="Upload image" name="listing[image]" class="form-control">
+        </div> -->
+        <button class="add_btn mt-3">Add</button>
+    </form>
+        </div>
+    </div>
+
+</body>

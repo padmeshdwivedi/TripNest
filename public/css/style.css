@@ -1,0 +1,86 @@
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container{
+  flex: 1;
+}
+nav{
+    height: 5rem;   
+    background-color: white;
+}
+.navbar-brand{
+  color: #fe424d;
+}
+.navbar-brand:hover{
+  color: #fe424d;
+}
+.nav-link{
+    color: #222;
+}
+.add_btn {
+  background-color: #fe424d;
+  height: 2.5rem;
+  width: 4rem;
+  border: none;
+  border-radius: 1rem;
+}
+.add_btn:hover{
+  transform: scale(1.1);
+}
+.card{
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.card-img-top{
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body{
+  padding: 0 !important;
+}
+.card-text p{
+  font-weight: 400;
+}
+.listing-link{
+  text-decoration: none;
+}
+
+/* edit route */
+input:focus, textarea:focus {
+  border-color: #007bff !important; /* Bootstrap blue */
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25) !important;
+  outline: none;
+}
+
+.update_btn {
+  background-color: #fe424d;
+  height: 2.5rem;
+  width: 5rem;
+  border: none;
+  border-radius: 1rem;
+}
+.update_btn:hover {
+  transform: scale(1.1);
+}
+/* footer  */
+.f-info{
+  height: 5rem;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.f-info-socials{
+  /* margin-right: 1rem; */
+  display: flex;
+  gap: 20px;
+}
+.f-info-links{
+  text-decoration: none;
+  color: black;
+}
