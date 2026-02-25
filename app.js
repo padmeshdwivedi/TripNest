@@ -9,8 +9,8 @@ const {isLoggedIn, isOwner, isReviewAuthor}=require(".//middleware.js");
 const {saveRedirectUrl}=require("./middleware.js");
 
 const mongoose = require('mongoose');
-// const mongodbUrl="mongodb://127.0.0.1:27017/wanderlust";
-const mongodbUrl = "mongodb+srv://dwivedipadmesh9:PjuMF1Jnpy87ClYB@cluster0.hoagq6k.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const mongodbUrl="mongodb://127.0.0.1:27017/wanderlust";
+// const mongodbUrl = "mongodb+srv://dwivedipadmesh9:PjuMF1Jnpy87ClYB@cluster0.hoagq6k.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.connect(mongodbUrl)
   .then(() => console.log('DB connected'))
   .catch((err) => console.error('DB connection error:', err));
